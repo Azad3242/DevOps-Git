@@ -1,0 +1,30 @@
+-Vprofile is a website written in java.
+-Multi tier web appstack
+-Deploy this product by using 5 services on 5 different virtual machines(Local).
+
+1 - Nginx
+2 - Tomcat
+3 - RabbitMQ
+4 - MemcacheD
+5 - Mysql
+ 
+
+*Tools
+
+1 - VM box
+2 - Vagrant
+3 - Git Bash
+4 - Sublime Text
+
+Use
+
+- User will enter URL
+- Nginx is used for load balancing, request will come here and it will redirect to Tomcat.
+- Apache Tomcat is java web application service web app written is java tomcat will host it.
+- Application written by developer will be seat in tomcat
+- Use nfs shared storage for extra space
+- RabbitMQ is a message broker or also call queuing agent to connect application together
+and you can string data from this
+- it will run SQL query to access user info and credentials
+- before SQL request it will go to memcached service
+- Memcached is database caching connected with mysql.
